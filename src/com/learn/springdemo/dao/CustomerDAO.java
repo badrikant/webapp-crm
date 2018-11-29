@@ -9,11 +9,13 @@ import com.learn.springdemo.entity.Customer;
  */
 public interface CustomerDAO {
 
-    public List<Customer> getCustomers();
+    List<Customer> getCustomers();
 
     void saveCustomer(Customer theCustomer);
 
     Customer getCustomer(int theId);
 
     void deleteCustomer(int theId);
+
+    List<Customer> searchCustomers(String theSearchName);
 }
